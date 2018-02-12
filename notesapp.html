@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Angular.js Notes App</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="notesapp/images/img/appicon.ico" /> 
+  <link rel="stylesheet" href="ryanhunter.org/portfolio/libs/sweetalert2/sweetalert2.min.css">
+  <link rel="stylesheet" href="ryanhunter.org/portfolio/libs/w3/w3.css">
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="notesapp/notesapp.css" rel="stylesheet" type="text/css" />  
+  <script src="ryanhunter.org/portfolio/libs/angularjs/1.6/angular.min.js"></script>
+  <script src="ryanhunter.org/portfolio/libs/sweetalert2/sweetalert2.min.js"></script>
+  <script src="notesapp/notesapp.js"></script>
+</head>
+<body ng-app="notetakingApp" ng-controller="notetakingCtrl">
+  <div class="w3-container"> 
+  <h2>Notes</h2>
+  <textarea ng-model="message" cols="40" rows="4"></textarea>
+  <p>Number of characters left: <span ng-bind="charactersLeft()" class="charactersLeft"></span></p>
+  <p>    <button ng-click="save()"  class="w3-button w3-round-large w3-indigo w3-hover-purple">Save Note</button>
+    <button ng-click="clear()" class="w3-button w3-round-large w3-orange w3-hover-red"">Clear</button>
+  </p>
+
+  <p><span ng-bind="message" class="styleNotes"></span> </p>
+  <h3>Previous Notes</h3>  
+  <div class="w3-panel w3-pale-blue w3-leftbar w3-rightbar w3-border-blue">
+    <div id="notesArchived"></div>
+  </div>
+  <br><br>
+	  <div class="w3-panel w3-card">
+	  	<h3>Code Portfolio</h3>
+		<p>A simple but fun Angular.js and W3.css powered <strong>Notetaking App</strong>.  Coded by <a href="http://www.ryanhunter.org/">Ryan Hunter</a>.</p>
+	  </div>
+</div><!--/ container -->
+</body>
+</html>

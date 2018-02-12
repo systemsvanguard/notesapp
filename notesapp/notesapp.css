@@ -1,0 +1,26 @@
+/*  Styling for the Angular.js 1.6 Note Taking App.   */
+  .charactersLeft {
+    font-weight:bold;
+  }
+  .styleNotes {
+	  color: #00008b; /* dark blue */
+	  width: 60%;
+  }
+
+h1, h2, h3 {
+	font-family: 'Poppins', sans-serif;
+	color: #4B0082;  /* indigo */
+}
+
+textarea {
+    /* height: 100px;  */
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+	color: blue;
+    font-size: 16px;
+    resize: none;
+}  
+  
